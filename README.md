@@ -59,3 +59,8 @@ Input:	COLD 8, 6, 3, 4, 2, 5, 7
 Output:	Removing PJs, pants, socks, shirt, hat, jacket, fail
 Input:	COLD 6
 Output:	fail
+
+
+To run this program navigate to `get.dressed/src`
+run `javac Main.java`
+run `java Main.java`
