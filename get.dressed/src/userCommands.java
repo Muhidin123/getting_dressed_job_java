@@ -1,4 +1,4 @@
-import org.jetbrains.annotations.NotNull;
+//import org.jetbrains.annotations.NotNull;
 import java.util.*;
 public class userCommands {
 
@@ -8,19 +8,19 @@ public class userCommands {
     public static String output = "";
     public static int[] answers = new int[8];
 
-
-
     public static void main(String[] args) {
         managingOutput();
     }
+
+
 
     public static void updateAnswers (int userInput) {
         //UPDATE ANSWERS ARRAY WITH USERS INPUT COMMANDS(ARR IS ORDERED)
         answers[userInput - 1] = userInput;
     }
 
-    public static @NotNull
-    String hotOrColdCommand () {
+//    public static @NotNull
+    public static String hotOrColdCommand () {
         //PROMPT USER FOR FIRST COMMAND IN THE PROCESS
         System.out.println("ARE YOU HOT OR COLD: ");
         return input.nextLine().toUpperCase();
@@ -89,7 +89,7 @@ public class userCommands {
         return validInput;
     }
 
-    public static void managingOutput () {
+    public static void managingOutput() {
         String userResponseOnHotOrCold = hotOrColdCommand();
 
         if (userResponseOnHotOrCold.equals("HOT")) {
